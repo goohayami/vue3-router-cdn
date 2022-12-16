@@ -1,24 +1,32 @@
 <template>
-  <div class="title">
-    <h1>Hello Vue3!</h1>
-    <p>Vue3 CDNでVue-routerを使う!</p>
-  </div>
+  <header>
+    <h1>Vue3 vue-router</h1>
+    <p>CDNだけでSPAを実現</p>
+  </header>
   <div class="main-container">
     <nav>
-      <router-link to="/">CDNリンク</router-link> <br />
-      <router-link to="/about">Go to About</router-link><br />
+      <router-link class="router" to="/">CDNリンク</router-link><br />
+      <router-link class="router" to="/about">Go to About</router-link><br />
+
+      <router-link to="/about">ここが最後だよ</router-link><br />
     </nav>
+
     <router-view></router-view>
   </div>
 </template>
 
+<script setup></script>
+
 <style>
-.title {
-  height: 50px;
+header {
+  z-index: 999;
+  padding: 10px 20px;
+  width: 100%;
   line-height: 3rem;
   padding-left: 1rem;
   display: flex;
-  background-color: blueviolet;
+  background-color: rgb(210, 191, 227);
+  position: fixed;
 }
 h1 {
   margin: 0;
@@ -29,17 +37,34 @@ h1 {
 p {
   margin: 0;
   font-size: 20px;
+  line-height: 2rem;
 }
 nav {
-  background-color: bisque;
-  width: 250px;
-  height: 600px;
+  background-color: rgb(244, 240, 236);
   font-size: 20px;
   line-height: 3rem;
-  padding-top: 1rem;
-  padding-left: 0.5rem;
+  padding-top: 5rem;
+  padding-left: 2rem;
+
+  /* これがスクロールのもと */
+  position: sticky;
+  top: 0;
+
+  /*横半分25%　縦を100vhにする*/
+  width: 20%;
+  height: 85vh;
 }
+
+.router {
+  text-decoration: none;
+}
+.router:hover {
+  background-color: pink;
+  border-radius: 4px;
+}
+
 .main-container {
   display: flex;
+  background-color: rgb(247, 245, 245);
 }
 </style>
