@@ -75,15 +75,13 @@
     const routes = [
       {
         path: "/",
-        component: Vue.defineAsyncComponent(() =>
-          loadModule("./views/HomeView.vue", vue3_sfc_loader_options)
-        ),
+        component: () =>
+          loadModule("./views/HomeView.vue", vue3_sfc_loader_options),
       },
       {
         path: "/about",
-        component: Vue.defineAsyncComponent(() =>
-          loadModule("./views/AboutView.vue", vue3_sfc_loader_options)
-        ),
+        component: () =>
+          loadModule("./views/AboutView.vue", vue3_sfc_loader_options),
       },
     ];
 
