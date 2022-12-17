@@ -21,10 +21,10 @@
     <p>
       index.htmlのheaderタグに上記のスクリプトを埋め込み、vue-routerの設定を行います。
     </p>
-    <img style="width: 60%" :src="img01Path" /><br />
+    <img style="width: 80%" :src="img01Path" /><br />
     <br />
     <p>フォルダの構成</p>
-    <img style="width: 25%" :src="img02Path" /><br />
+    <img style="width: 40%" :src="img02Path" /><br />
     <p>index.jsは作成せず、index.htmlにまとめました。</p>
     <br />
   </section>

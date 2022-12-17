@@ -83,6 +83,16 @@
           component: () =>
             loadModule("./views/AboutView.vue", vue3_sfc_loader_options),
         },
+        {
+          path: "/aboutHtml",
+          component: () =>
+            loadModule("./views/About2View.vue", vue3_sfc_loader_options),
+        },
+        {
+          path: "/template",
+          component: () =>
+            loadModule("./views/TemplateView.vue", vue3_sfc_loader_options),
+        },
       ];
 
       const router = VueRouter.createRouter({

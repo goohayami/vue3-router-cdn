@@ -6,10 +6,11 @@
   <div class="main-container">
     <nav>
       <router-link class="router" to="/">CDNを使用する</router-link><br />
-      <router-link class="router" to="/about">VueRouterの設定</router-link
+      <router-link class="router" to="/about">VueRouterの設定①</router-link
       ><br />
-
-      <router-link to="/about">ここが最後だよ</router-link><br />
+      <router-link class="router" to="/aboutHtml">VueRouterの設定②</router-link
+      ><br />
+      <router-link to="/template">実装コード</router-link><br />
     </nav>
 
     <router-view></router-view>
