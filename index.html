@@ -93,6 +93,11 @@
           component: () =>
             loadModule("./views/TemplateView.vue", vue3_sfc_loader_options),
         },
+        {
+          path: "/github",
+          component: () =>
+            loadModule("./views/GithubView.vue", vue3_sfc_loader_options),
+        },
       ];
 
       const router = VueRouter.createRouter({

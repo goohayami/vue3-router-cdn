@@ -1,7 +1,9 @@
 <template>
   <section>
-    <h1>実装コード</h1>
-    <h3>ファイル構成</h3>
+    <h1>ソースコード</h1>
+    <p>最小限のコードサンプルです。このままコピペで動きます。</p>
+    <br />
+    <h2>ファイル構成</h2>
     <img style="width: 60%" :src="img04Path" /><br />
 
     <h3>index.html</h3>
@@ -323,8 +325,34 @@
         <li>&nbsp;&nbsp;background-color: azure;</li>
         <li>}</li>
         <li>&lt;/style&gt;</li>
-        <li></li></ul
-    ></code>
+      </ul>
+      ></code
+    >
+    <h2>〇〇.vue</h2>
+    <p>viewsフォルダ配下に作成します</p>
+    <h3>（例）HomeView.vue</h3>
+    <code>
+      <ul>
+        <li>&lt;template&gt;</li>
+        <li>&nbsp;&nbsp;&lt;section&gt;</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;h1 ここは HOME&lt;/h1&gt;</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;h2 ここは HOME&lt;/h2&gt;</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;h3 ここは HOME&lt;/h3&gt;</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;p ここは HOME&lt;/p&gt;</li>
+        <li>&nbsp;&nbsp;&lt;/section&gt;</li>
+        <li>&lt;/template&gt;</li>
+        <li></li>
+        <li>&lt;script&gt;</li>
+        <li>// ここにスクリプト</li>
+        <li>&lt;/script&gt;</li>
+        <li></li>
+        <li>&lt;style&gt;</li>
+        <li>/* ここにｃｓｓ */</li>
+        <li>&lt;/style&gt;</li>
+      </ul>
+    </code>
+    <p>以下、必要なページを.vueで格納して行きます（省略）。</p>
+    <br /><br />
   </section>
 </template>
 
@@ -363,5 +391,8 @@ h3 {
   color: red;
   margin: 0;
   padding: 0;
+}
+h2 {
+  margin: 0;
 }
 </style>

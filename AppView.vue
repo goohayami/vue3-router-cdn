@@ -10,7 +10,8 @@
       ><br />
       <router-link class="router" to="/aboutHtml">VueRouterの設定②</router-link
       ><br />
-      <router-link to="/template">実装コード</router-link><br />
+      <router-link to="/template">ソースコード</router-link><br />
+      <router-link to="/github">実装見本</router-link><br />
     </nav>
 
     <router-view></router-view>
