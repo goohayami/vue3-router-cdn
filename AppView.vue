@@ -5,8 +5,9 @@
   </header>
   <div class="main-container">
     <nav>
-      <router-link class="router" to="/">CDNリンク</router-link><br />
-      <router-link class="router" to="/about">Go to About</router-link><br />
+      <router-link class="router" to="/">CDNを使用する</router-link><br />
+      <router-link class="router" to="/about">VueRouterの設定</router-link
+      ><br />
 
       <router-link to="/about">ここが最後だよ</router-link><br />
     </nav>
@@ -51,7 +52,7 @@ nav {
   top: 0;
 
   /*横半分25%　縦を100vhにする*/
-  width: 20%;
+  width: 250px;
   height: 85vh;
 }
 
