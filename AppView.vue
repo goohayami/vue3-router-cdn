@@ -38,7 +38,7 @@ h1 {
 p {
   margin: 0;
   font-size: 20px;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 nav {
   background-color: rgb(244, 240, 236);

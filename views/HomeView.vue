@@ -34,8 +34,8 @@
 export default {
   data() {
     return {
-      img01Path: "../assets/01.png",
-      img02Path: "../assets/02.png",
+      img01Path: "assets/01.png",
+      img02Path: "assets/02.png",
     };
   },
 };

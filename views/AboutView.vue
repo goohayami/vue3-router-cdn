@@ -3,9 +3,34 @@
     <h1>VueRouterの設定</h1>
     <p>まずはindex.htmlのスクリプトタグの中でVueRouterの設定を行います。</p>
     <br />
-    <h3><span>JavaScript</span></h3>
+    <h3>JavaScript</h3>
+    <p>公式の見本</p>
+    <code>
+      <ul>
+        <li style="color: aqua">
+          const Home = { template: '&lt;div&gt;Home&lt;/div&gt;' }
+        </li>
+        <li style="color: aqua">
+          const About = { template: '&lt;div&gt;About&lt;/div&gt;' }
+        </li>
+        <br />
+        <li style="color: aqua">const routes = [</li>
+        <li style="color: aqua">&nbsp;&nbsp;{ path: '/', component: Home },</li>
+        <li style="color: aqua">
+          &nbsp;&nbsp;{ path: '/about', component: About },
+        </li>
+        <li style="color: aqua">]</li>
+      </ul>
+    </code>
+    <p>コンポーネントの内容をオブジェクトの中で指定する形です。</p>
+    <p>
+      しかし、これではページというよりは、メッセージの変遷にしかなりません。
+    </p>
+    <p>そこで【vue3-sfc-loader】を使って.vueファイルを読み込みます。</p>
+    <br />
 
-    <p>routes path指定</p>
+    <p>vue3_sfc_loaderから.vueファイルを読みとり</p>
+    <p>コンポーネントのtemplateとして定義します。</p>
     <code class="code-container">
       <ul>
         <li>const routes = [</li>
@@ -15,11 +40,13 @@
         </li>
         <li>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;component:
-          () =&gt;
+          <span>() =&gt;</span>
         </li>
         <li>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loadModule("./views/HomeView.vue",
-          vue3_sfc_loader_options),
+          <span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loadModule("./views/HomeView.vue",
+            vue3_sfc_loader_options),</span
+          >
         </li>
         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</li>
         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</li>
@@ -29,20 +56,24 @@
         </li>
         <li>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;component:
-          () =&gt;
+          <span> () =&gt;</span>
         </li>
         <li>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loadModule("./views/AboutView.vue",
-          vue3_sfc_loader_options),
+          <span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loadModule("./views/AboutView.vue",
+            vue3_sfc_loader_options),</span
+          >
         </li>
+
         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</li>
         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;];</li>
       </ul>
     </code>
 
+    <br /><br /><br /><br />
     <p>router定義</p>
     <code>
-      <ul>
+      <ul style="color: aqua">
         <li>const router = VueRouter.createRouter({</li>
         <li>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;history:
@@ -72,13 +103,14 @@ ul {
 li {
   height: 20px;
   line-height: 1.2rem;
-  color: wheat;
+  color: whitesmoke;
 }
 
 span {
-  color: red;
+  color: rgb(64, 224, 115);
 }
 h3 {
+  color: red;
   margin: 0;
   padding: 0;
 }
